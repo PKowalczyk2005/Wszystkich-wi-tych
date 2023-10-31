@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang="pl-PL" style="scroll-behavior: smooth;">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="author" content="Paweł Kowalczyk"/>
+        <meta name="keywords" content="1, listopad, święto, święto wszystkich świętych, Uroczystość Wszystkich Świętych"/>
+        <meta name="description" content="Uroczystość Wszystkich Świętych"/>
+        <meta name="robots" content="all"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/x-icon" href="znicz.jpg">
+        <title>Uroczystość Wszystkich Świętych</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+            
+            @keyframes fade-in {
+                100% {
+                    opacity: 1;
+                    filter: blur(0);
+                }
+            }
+
+            @keyframes fade-in-znicz {
+                0% {
+                    scale: 0%;
+                }
+                100% {
+                    scale: 100%;
+                    opacity: 1;
+                    filter: blur(0);
+                }
+            }
+
+            @keyframes fade-in-scroll {
+                0% {
+                    scale: 0%;
+                }
+                100% {
+                    scale: 100%;
+                    opacity: 1;
+                    filter: blur(0);
+                }
+            }
+
+            body {
+                background-color: black;
+            }
+
+            #container {
+                display: flex;
+                height: 50em;
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center
+            }
+
+            #container2 {
+                display: flex;
+                height: 70em;
+                width: 95%;
+                margin-left: auto;
+                margin-right: auto;
+                align-items: center
+            }
+
+            #text {
+                font-size: 2em;
+                font-family: "Montserrat Medium";
+                transform: scale(0.94);
+                text-align: justify;
+                width: 55%;
+                transform: scale(0.94);
+                animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+                display: flex;
+                color: white;
+                margin-left: auto;
+                margin-right: auto;
+                opacity: 0;
+                filter: blur(4px);
+                animation: fade-in 2.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+            }
+
+            #text2 {
+                font-size: 2em;
+                font-family: "Montserrat Medium";
+                text-align: justify;
+                width: 55%;
+                display: flex;
+                color: white;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 6em;
+            }
+
+            #znicz {
+                width: 45%;
+                margin-left: auto;
+                margin-right: auto;
+                opacity: 0;
+                animation: fade-in-znicz 2s 0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+            }
+
+            #scroll {
+                opacity: 0;
+                text-decoration: none;
+                color: white;
+                font-family: "Montserrat Medium";
+                animation: fade-in-scroll 2s 10s forwards cubic-bezier(0.11, 0, 0.5, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="text">
+                <p>
+                    Uroczystość Wszystkich Świętych – w Kościele katolickim uroczystość ku czci wszystkich chrześcijan, którzy osiągnęli stan zbawienia i przebywają w niebie, obchodzona corocznie w dniu 1 listopada, treściowo połączona z następującym po niej obchodem liturgicznym Dnia Zadusznego. W doktrynie Kościoła katolickiego jest wyrazem wiary w obcowanie świętych i powszechne powołanie do świętości.
+                </p>
+            </div>
+            <img id="znicz" alt="obraz znicza" src="znicz.jpg">
+        </div>
+
+        <div style="width: 100%; margin-left: auto; margin-right: auto; text-align: center;">
+            <a id="scroll" href="#text2">Kontynuuj czytanie >></a>
+        </div>
+
+        <div id="container2">
+            <img alt="gif świeczki" src="plomien.webp" style="margin-top: 6em;">
+            <div id="text2">
+                <p>
+                    W dniu Uroczystości Wszystkich Świętych, a także następnego dnia (Dzień Zaduszny, 2 listopada) Polacy odwiedzają cmentarze, aby ozdobić groby swoich bliskich kwiatami i zapalić znicze (dzień Zaduszny, zwany też Zaduszkami, dla katolików łacińskich i wielu innych chrześcijan, to dzień modlitw za wszystkich wiernych zmarłych).
+                </p>
+            </div>
+        </div>
+        
+        <hr />
+        <p style="color: white; text-align: center;">Paweł Kowalczyk 2023</p>
+        <hr />
+    </body>
+</html>
